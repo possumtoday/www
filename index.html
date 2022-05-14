@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- POSSUMS ARE COOL AS FUCK!!! -->
+<!-- This entire HTML page is PUBLIC DOMAIN!!! Go FUCKING CRAZY!!! -->
+
+<HTML>
+<HEAD>
+	<LINK HREF="http://possum.today/" REL="canonical" />
+	<META CONTENT="noindex" NAME="googlebot" /> <!-- FUCK GOOGLE -->
+	<META CONTENT="interest-cohort=()" HTTP-EQUIV="Permissions-Policy" /> <!-- FUCK GOOGLE -->
+
+	<SCRIPT>
+window.EXTENSION = "png";
+window.onload = function(){
+	var d;
+	var possum_div;
+	var possum_img;
+	d = new Date();
+	possum_div = document.getElementById("possum");
+	possum_img = document.createElement("img");
+	d = d.toISOString();
+	d = d.substring(0, d.indexOf('T'));
+	possum_img.src = d + "." + EXTENSION;
+	possum_img.alt = "possum for " + d;
+	possum_div.removeChild(possum_div.childNodes[1]);
+	possum_div.appendChild(possum_img);
+}
+	</SCRIPT>
+
+	<TITLE>possum.today</TITLE>
+</HEAD>
+<BODY>
+	<H1>possum.today</H1>
+	<DIV ID="possum">
+		<P>Possum not loading - is JavaScript available? It doesn't matter, you can still browse possums <A>here</A>.</P>
+	</DIV>
+	<P>
+I steal photos of possums on-line to post on this website.
+No permission was given.
+I make no money off of this.
+I just like possums.
+If you really get bothered e-mail <A HREF="http://www.trinity.moe">me</A> and I'll take your possum picture off of here.
+	</P>
+	<P>
+<B>Donate to the <A HREF="https://opossumsocietyus.org/">Opossum Society of the United States</A>!</B>
+I am not affiliated with this charity but I wish I was.
+	</P>
+</BODY>
+</HTML>
